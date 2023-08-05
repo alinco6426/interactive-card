@@ -1,0 +1,302 @@
+/* STYLE FOR DESKTOP VIEW STARTS HERE  */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+body{
+    background-image: url(bg-main-desktop.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Space Grotesk';
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.wrapper{
+    display: grid;
+    justify-content: center;
+    width: 100%;
+}
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.card-content-displayer{
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.front-displayer{
+    background-image: url(bg-card-front.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 300px;
+    height: 160px;
+    border-radius: 5px;
+    padding: 15px 20px;
+    color: hsl(0, 0%, 100%);
+    overflow: hidden;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+.card-logo{
+    width: 45px;
+    margin-bottom: 30px;
+}
+#card-no-displayer{
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.name-date-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.name-date-container p{
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.back-displayer{
+    background-image: url(bg-card-back.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 160px;
+    border-radius: 5px;
+    position: relative;
+    color: hsl(0, 0%, 100%);
+    margin-left: 150px;
+}
+.card-code{
+    position: absolute;
+    font-weight: 300;
+    right: 36px;
+    top: 43%;
+    letter-spacing: 2px;
+}
+.form-feed-back-div{
+    width:280px;
+    margin: 140px 0  0 100px;
+    position: relative;
+}
+.form{
+    width: 100%;
+}
+.form label{
+    display: block;
+    margin: 12px 0;
+    text-align: left;
+    text-transform: uppercase;
+    color: hsl(278, 68%, 11%);
+    font-size: 10px;
+    font-weight: 500;
+}
+.form label span {
+    margin: 2px 0;
+    display: block;
+}
+.info-getters{
+    padding: 5px;
+    outline: none;
+    height: 30px;
+    border-radius: 5px;
+    width: 100%;
+    font-family: 'Space Grotesk';
+    border: 1px solid hsl(270, 3%, 87%);
+}
+.info-getters:focus{
+    border: 1px solid  hsl(278, 94%, 30%);
+}
+.date-code-wrapper{
+    display: flex;
+    width: 100%;
+}
+.date.container{
+    width: 50%;
+}
+.card-code-container{
+    width: 100%;
+}
+.date-getter-container{
+    display: flex;
+    width: 100%;
+}
+.date-getter-container .info-getters{
+    width: 80px;
+    margin-right: 5px;
+}
+
+
+#info-validator,#continue-btn{
+    width: 100%;
+    padding: 8px;
+    background-color: hsl(278, 68%, 11%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    display: block;
+    font-family: 'Space Grotesk';
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.alert{
+    color: hsl(0, 100%, 66%);
+    margin: 10px 2px ;
+    text-transform: lowercase;
+    font-size: 8px;
+}
+.feed-back-container {
+    position: absolute;
+    width: 280px;
+    top: 45px;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+
+.feed-back-container img {
+    width:  50px;
+    margin: 0 0 10px 0;
+}
+
+.feed-back-container h2 {
+    color: hsl(278, 68%, 11%);
+    margin: 15px 0;
+}
+
+.feed-back-container p {
+    color: hsl(270, 3%, 87%);
+    margin: 15px 0;
+    font-size: 16px
+}
+.error{
+    border:  1px solid  hsl(0, 100%, 66%);
+}
+
+/* STYLE FOR DESKTOP VIEW ENDS HERE  */
+
+
+
+/* STYLE FOR MOBILE VIEW STARTS HERE  */
+
+@media only screen and (max-width:450px) {
+    
+body {
+        background-image: url(bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100%;
+    }
+    .wrapper {
+        display: block;
+        justify-content: none;
+        width: 100%;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .card-content-displayer {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 30px;
+        position: relative;
+        margin-bottom: 100px;
+    }
+
+    .front-displayer {
+        margin: 0;
+        position: absolute;
+        top: 75%;
+        z-index: 2;
+        box-shadow: 0px 3px 5px  3px  hsla(0, 0%, 100%,0.1);
+    }
+
+    .card-logo {
+        width: 50px;
+        margin-bottom: 25px;
+    }
+
+    #card-no-displayer {
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .name-date-container {
+        margin-top: 30px;
+    }
+
+    .back-displayer {
+        margin: 0;
+        left: 65px;
+        top: 45px;
+    }
+    .form-feed-back-div {
+        width: 100%;
+        margin: 0;
+        position: relative;
+        padding: 40px;
+    }
+    .form {
+        width: 100%;
+    }
+
+    .form label {
+        font-size: 12px;
+    }
+
+    .form label span {
+        margin: 5px ;
+        display: block;
+    }
+
+    .info-getters {
+        padding: 8px;
+        height: 35px;
+        width: 100%;
+    }
+    .date-code-wrapper {
+        display: flex;
+        width: 100%;
+    }
+
+    .date.container {
+        width: 100%;
+    }
+
+    .card-code-container {
+        width: 100%;
+    }
+
+    .date-getter-container {
+        display: flex;
+        width: 100%;
+    }
+
+    .date-getter-container .info-getters {
+        width: 95%;
+        margin-right:5px;
+    }
+    #info-validator,
+    #continue-btn {
+        width: 100%;
+        padding: 15px;
+    }
+    .feed-back-container {
+        width: 300px;
+        padding:  10px 0 10px 15px;
+        margin-left: 10px;
+    }
+}
+/* STYLE FOR MOBILE VIEW ENDS HERE */
